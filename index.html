@@ -245,4 +245,5 @@
       function beep() { try { var ctx = new (window.AudioContext || window.webkitAudioContext)(); var o = ctx.createOscillator(); o.type = 'sine'; o.frequency.value = 1500; o.connect(ctx.destination); o.start(); setTimeout(() => o.stop(), 100); } catch(e) {} }
     </script>
   </body>
+
 </html>
